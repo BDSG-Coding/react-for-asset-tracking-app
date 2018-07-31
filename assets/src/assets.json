@@ -1,20 +1,22 @@
 [
     {
         "id": 1,
+        "images" : "https://set.odi.org/wp-content/uploads/2015/05/Data-%C2%A9-Creative-Commons-1024x682.jpg",
         "modelNumber" : "123344",
         "serialNumber":"uiejf983",
         "assetTag": "kljasd",
         "IPaddress" : "kll:jn:jnjk",
-        "rackId": "12"
+        "rackId": 12
         
     },
     {
         "id": 2,
+        "images" : "https://images.techhive.com/images/article/2017/01/row-4-100705504-large.jpg",
         "modelNumber" : "123344",
         "serialNumber":"uiejf983",
         "assetTag": "kljasd",
         "IPaddress" : "kll:jn:jnjk",
-        "rackId": "14"
+        "rackId": 14
         
     }
 ]

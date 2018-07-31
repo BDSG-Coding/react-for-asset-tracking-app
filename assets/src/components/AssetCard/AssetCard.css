@@ -9,7 +9,7 @@
     text-align: left;
   }
   
-  /* .card > .img-container {
+  .card > .img-container {
     height: 60%;
     overflow: hidden;
     text-align: center;
@@ -17,7 +17,7 @@
   }
   .card > .img-container > img {
     width: 60%
-  } */
+  }
   
   .card > .content {
     padding-left: 1rem;
