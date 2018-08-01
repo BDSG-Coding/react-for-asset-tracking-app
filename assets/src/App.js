@@ -1,30 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // import AssetCard from "./components/AssetCard";
-import Wrapper from "./components/Wrapper";
-import assets from "./assets.json";
-import Jumbotron from "./components/Jumbotron";
+
+
+import Servers from "./locations/Servers";
 import './App.css';
-import { FormBtn } from './components/Form/FormBtn';
-import { Col, Container, Rows} from "./components/Grid";
-import {Form} from "./components/Form";
 
+const App = () => (
+  // removeAsset = id => {
+  //   const assets = this.state.assets.filter(asset => asset.id !== id);
+  //   // Set this.state.friends equal to the new friends array
+  //   this.setState({ assets });
 
-
-class App extends Component {
-  state = {
-    assets
-  };
-  removeAsset = id => {
-    const assets = this.state.assets.filter(asset => asset.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ assets });
-
-  }
-  render() {
-    return (
-      <Wrapper>
-        <Jumbotron> Asset Tracking app </Jumbotron>
-        <Grid/>
+  // }
+  
+   
+    
+        <div>
+          <Servers/>
         {/* {this.state.assets.map(asset => (
           <AssetCard
             removeAsset={this.removeAsset}
@@ -37,11 +29,7 @@ class App extends Component {
             rackId={asset.rackId}
           />
         ))} */} 
-        <Form/>
-        <FormBtn/>
-      </Wrapper>
-    );
-  }
-}
+       </div>
+      );
 
 export default App;
