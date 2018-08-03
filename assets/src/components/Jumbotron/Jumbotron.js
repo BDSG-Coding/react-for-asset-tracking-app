@@ -8,5 +8,6 @@ const Jumbotron = ({ children }) => (
     {children}
   </div>
 );
-
 export default Jumbotron;
+
+// backgroundImage: 'url(' + ./public/images/logo39.png + ')',
