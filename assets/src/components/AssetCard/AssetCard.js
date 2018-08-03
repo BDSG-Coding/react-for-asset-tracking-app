@@ -25,9 +25,9 @@ const AssetCard = props => {
         </li>
         </ul>
     </div>
-    <span onClick={() => props.removeAsset(props.id)} className="remove">
+    {/* <span onClick={() => props.removeAsset(props.id)} className="remove">
       𝘅 
-    </span>
+    </span> */}
 </div>
 }
  

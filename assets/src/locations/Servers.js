@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-// import Wrapper from "../components/Wrapper";
-// import assets from "../assets.json";
 import Jumbotron from "../components/Jumbotron";
 import FormBtn from "../components/Form/FormBtn.js";
 import InputForm from "../components/Form/InputForm.js";
+// import AssetCard from "../components/AssetCard/AssetCard.js";
+import Footer from "../components/Footer/index"
+// import asset from "../assets.json";
 
 
 import { Col, Container, Row } from "../components/Grid";
@@ -24,6 +25,7 @@ class Servers extends Component {
     
     render() { 
         return ( 
+            <div>
             <Container fluid>
             <Jumbotron>
               <h1>Asset Tracking </h1>
@@ -32,23 +34,24 @@ class Servers extends Component {
         <Row>
           <Col size="md-6">
           <div>
+              <h3>Add Asset</h3>
+          </div>
+          <div>
             <form>
-                <label> Model Number : 
-              <InputForm name="ModelNumber" placeholder="Model Number (required)" />
-              </label>
-              <label> Serial Number : 
-              <InputForm name="SerialNumber" placeholder="Serial Number (required)" />
-              </label>
-              <label> Asset Tag : 
-              <InputForm name="AssetTag" placeholder="Asset Tag (required)" />
-              </label>
-              <label> IP Adress : 
-              <InputForm name="IPAddress" placeholder="IP address(required)" />
-              </label>
-              <label> Rack Id : 
-              <InputForm name="RackID" placeholder="Rack Id (required)" />
-              </label>
-              <FormBtn>Submit</FormBtn>
+                <form-group>
+                    <label> Model Number  </label>
+                    <InputForm name="ModelNumber" placeholder="Model Number (required)" />
+                    <label> Serial Number  </label>
+                    <InputForm name="SerialNumber" placeholder="Serial Number (required)" />              
+                    <label> Asset Tag   </label>
+                    <InputForm name="AssetTag" placeholder= "Asset Tag (required)"/>
+                    <label> IP Adress   </label>
+                    <InputForm name="IPAddress" placeholder="IP address(required)" />
+                    <label> Rack Id 
+                    <InputForm name="RackID" placeholder="Rack Id (required)" />
+                    </label>
+                </form-group>
+                <FormBtn>Submit</FormBtn>
             </form>
             </div>
           </Col>
@@ -57,27 +60,16 @@ class Servers extends Component {
                 <h1>
                     Map will be here
                 </h1>
+                {/* <AssetCard/> */}
             </div>
-            {/* {this.state.books.length ? (
-              <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book._id}>
-                    <a href={"/books/" + book._id}>
-                      <strong>
-                        {book.title} by {book.author}
-                      </strong>
-                    </a>
-                    <DeleteBtn />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )} */}
+            {/* "https://maps.googleapis.com/maps/api/geocode/json?address=" + streetAddress1 + "," + city1 + "," + state1 + "&key=AIzaSyBIQJm-OUevDdIbHlZzj_TPv09iExwCGQg"; */}
+
           </Col>
         </Row>
+       
       </Container>
-
+      <Footer/>
+    </div>
 
 
          );
