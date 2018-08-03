@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "google-maps-react": "^2.0.2",
     "node": "^10.7.0",
     "nodemon": "^1.18.3",
     "react": "^16.4.1",

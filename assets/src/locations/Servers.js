@@ -4,8 +4,6 @@ import FormBtn from "../components/Form/FormBtn.js";
 import InputForm from "../components/Form/InputForm.js";
 // import AssetCard from "../components/AssetCard/AssetCard.js";
 import Footer from "../components/Footer/index"
-// import asset from "../assets.json";
-
 
 import { Col, Container, Row } from "../components/Grid";
 
