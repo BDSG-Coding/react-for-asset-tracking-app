@@ -4,7 +4,7 @@ import FormBtn from "../components/Form/FormBtn.js";
 import InputForm from "../components/Form/InputForm.js";
 // import AssetCard from "../components/AssetCard/AssetCard.js";
 import Footer from "../components/Footer/index"
-
+import Api from "../Util/Api"
 import { Col, Container, Row } from "../components/Grid";
 
 class Servers extends Component {
@@ -55,12 +55,13 @@ class Servers extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <div>
-                <h1>
+                <Api/>
+                {/* <h1>
                     Map will be here
-                </h1>
+                </h1> */}
                 {/* <AssetCard/> */}
             </div>
-            {/* "https://maps.googleapis.com/maps/api/geocode/json?address=" + streetAddress1 + "," + city1 + "," + state1 + "&key=AIzaSyBIQJm-OUevDdIbHlZzj_TPv09iExwCGQg"; */}
+        { /*"https://maps.googleapis.com/maps/api/geocode/json?address=" + streetAddress1 + "," + city1 + "," + state1 + "&key=AIzaSyBIQJm-OUevDdIbHlZzj_TPv09iExwCGQg"*/}
 
           </Col>
         </Row>
